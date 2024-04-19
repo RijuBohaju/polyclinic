@@ -1,0 +1,102 @@
+@import "../../../../variable.scss";
+
+.training__container {
+  display: grid;
+  place-items: center;
+  min-height: 80vh;
+  background-color: $--section-bg-color;
+  width: 100vw;
+  padding: 50px 0;
+  scroll-margin-top: 50px;
+
+
+  .wrapper {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1440px) {
+      width: 80%;
+    }
+  }
+
+  span {
+    background-color: #000;
+    height: 2px;
+    width: 50px;
+    display: inline-block;
+    // margin: 10px 0;
+  }
+
+  .skills__container {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      gap: 100px;
+    }
+  }
+
+  h1 {
+    font-family: $--heading-font-family;
+    font-weight: 700;
+    color: #4bc108;
+    font-size: $--heading-font-size;
+  }
+
+  h2 {
+    font-family: $--heading-font-family;
+    font-weight: 700;
+    color: #4bc108;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  p {
+    font-family: $--paragraph-font-family;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .skills {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      > div {
+        display: flex;
+        gap: 5px;
+
+        i {
+          font-size: 20px;
+          color: #4bc108;
+        }
+      }
+
+      li {
+        font-family: $--paragraph-font-family;
+        font-size: 17px;
+      }
+    }
+  }
+
+  button {
+    all: unset;
+    width: fit-content;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    line-height: normal;
+    font-family: $--paragraph-font-family;
+    transition: 0.4s ease-in-out;
+    background-color: #4bc108;
+    color: #fff;
+
+    &:hover {
+      background-color: #44871d;
+    }
+  }
+}
